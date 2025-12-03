@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Moul';
+    src: url('fonts/Moul-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bokor';
+    src: url('fonts/Bokor-Regular.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* font-family: Arial, sans-serif; */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background-image: url('/images/You\ are\ invited\ to\ our\ wedding.svg'); /* Replace with your local image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    /* background: rgba(122, 78, 78, 0.5); Slight overlay for text visibility */
+    border-radius: 10px;
+}
+
+.guest-name input {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: #825c23;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Moul', sans-serif;
+}
+
+button {
+    
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffbd5b;
+    border: none;
+    color: #825c23;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    font-family: 'Bokor', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffbd5b;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .guest-name input {
+        font-size: 20px;
+        padding: 8px;
+        width: 80%; /* Adjust width on smaller screens */
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+
+    .background {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guest-name input {
+        font-size: 16px;
+        padding: 6px;
+        width: 100%; /* Even more width for small screens */
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px; /* Smaller button size on very small screens */
+    }
+}
