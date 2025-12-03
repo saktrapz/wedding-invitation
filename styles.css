@@ -17,7 +17,7 @@ body, html {
 .container {
     position: relative;
     height: 100%;
-    background-image: url('/images/You\ are\ invited\ to\ our\ wedding.svg'); /* Replace with your local image path */
+    background-image: url('/images/Screenshot_1.png'); /* Replace with your local image path */
     background-size: cover;
     background-position: center;
     display: flex;
