@@ -1,7 +1,9 @@
 // Function to get the name from the URL query parameter
 function getNameFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('name') || 'Guest';  // Default to 'Guest' if no name is provided
+    let name = urlParams.get('name') || 'Guest';  // Default to 'Guest' if no name is provided
+    // Decode the name to handle spaces and special characters (like Khmer)
+    return decodeURIComponent(name);
 }
 
 // Function to set the guest name in the input box
